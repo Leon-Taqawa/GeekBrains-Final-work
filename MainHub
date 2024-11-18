@@ -1,0 +1,23 @@
+def filter_short_strings(strings):
+    short_strings = []
+    for string in strings:
+        if len(string) <= 3:
+            short_strings.append(string)
+    return short_strings
+
+def main():
+    # Примеры массивов строк
+    examples = [
+        ["Hello", "2", "world", ":-)"],
+        ["1234", "1567", "-2", "computer science"],
+        ["Russia", "Denmark", "Kazan"]
+    ]
+    
+    for strings in examples:
+        result = filter_short_strings(strings)
+        print(f"Входные данные: {strings}")
+        print(f"Новый массив строк длиной до трех символов: {result}")
+        print()  # Пустая строка для разделения примеров
+
+if name == "main":
+    main()
